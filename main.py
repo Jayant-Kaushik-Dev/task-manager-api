@@ -1,8 +1,22 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # Create an instance of the FastAPI app
 app = FastAPI()
+
+origins = [
+    "https://task-manager-frontend-b39d.onrender.com",  # your deployed frontend
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # frontend origin
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Task model to accept data in the body of the POST request
 class Task(BaseModel):

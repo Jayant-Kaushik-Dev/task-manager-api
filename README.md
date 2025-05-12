@@ -7,21 +7,21 @@ This is a simple REST API built with **FastAPI** for managing tasks.
 
 ---
 
-## 🚀 Features
+##  Features
 - View a welcome message at the root URL
 - Fetch a list of sample tasks
 - Built using FastAPI, a modern and high-performance web framework
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Python 3.9+**
 - **FastAPI**
 - **Uvicorn** (for running the server)
 
 ---
 
-## 🧠 How to Run Locally
+##  How to Run Locally
 
 1. Clone the repository:
 
